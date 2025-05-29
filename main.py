@@ -22,7 +22,7 @@ output_text = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=60, height=15,
 output_text.pack(pady=10)
 
 def talk(text):
-    output_text.insert(tk.END, f"Alexa: {text}\n\n")
+    output_text.insert(tk.END, f"Alex: {text}\n\n")
     output_text.see(tk.END)
     engine.say(text)
     engine.runAndWait()
